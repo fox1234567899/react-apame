@@ -1,4 +1,4 @@
-import OrderSummary from "./orderSummary";
+import OrderSummary from "./OrderSummary";
 import PaymentSection from "./PaymentSection";
 import useCardData from "../../assets/hooks/useCardData";
 import styles from "./checkout.module.css"
