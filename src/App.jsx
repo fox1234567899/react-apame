@@ -1,21 +1,21 @@
 import  { useEffect } from 'react'
 import {BrowserRouter,Routes,Route} from "react-router-dom"
-import MainLayout from './componenet/layout/MainLayout'
-import HomePage from './componenet/home/HomePage'
-import Notfound from './componenet/UI/Notfound'
-import ItemPage from './componenet/Items/ItemPage'
+import MainLayout from './component/layout/MainLayout'
+import HomePage from './component/home/HomePage'
+import Notfound from './component/UI/Notfound'
+import ItemPage from './component/Items/ItemPage'
 import api from './api'
-import CheckOutPage from './componenet/checkout/checkOutPage'
+import CheckOutPage from './component/checkout/checkOutPage'
 import LoginPage from './user/LoginPage'
-import CartPage from './componenet/cart/CartPage'
+import CartPage from './component/cart/CartPage'
 import { useState } from 'react'
 import {AuthSystem } from './context/AuthorizationforContext'
-import ProtectedRoute from './componenet/UI/ProtectedRoute'
+import ProtectedRoute from './component/UI/ProtectedRoute'
 import SearchPage from './search/SearchPage'
 import ProfilePage from './user/ProfilePage'
 import RegisterPage from './user/RegisterPage'
 import "react-toastify/dist/ReactToastify.css";
-import PaymentPart from './componenet/payment/PaymentPart'
+import PaymentPart from './component/payment/PaymentPart'
 const App = () => {
   const [numCartItems, setNumberCartItems] = useState(0)
 

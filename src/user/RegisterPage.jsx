@@ -2,7 +2,7 @@ import  { useState } from 'react'
 import styles from './login.module.css'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import api from '../api'
-import Error from '../componenet/UI/Error'
+import Error from '../component/UI/Error'
 import { toast } from 'react-toastify'
 const RegisterPage = () => {
     const [loading,setLoading]=useState(false)

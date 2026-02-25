@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { replace, useLocation,useNavigate } from 'react-router-dom'
-import { HomeCard } from '../componenet/home/HomeCard'
+import { HomeCard } from '../component/home/HomeCard'
 import api from "../api"
-import HomePage from '../componenet/home/HomePage'
+import HomePage from '../component/home/HomePage'
 import styles from './search.module.css'
 const SearchPage = () => {
     const [products,setProducts] = useState([])

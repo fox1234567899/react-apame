@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 import UserInformation from './UserInformation'
 import api from '../api'
-import Spinner from '../componenet/UI/Spinner'
+import Spinner from '../component/UI/Spinner'
 const ProfilePage = () => {
 
 	const [userInformation,setUserInformation] = useState({})
