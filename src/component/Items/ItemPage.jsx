@@ -69,7 +69,7 @@ const ItemPage = ({setNumberCartItems}) => {
        
         <div className="col-md-6 mb-4 mt-">
             <div className="card my-5">
-                <img  src={`${Base_URL}${item.image}`} className="card-img-top" alt="Product Image"/>
+                <img  src={`${item.image}`} className="card-img-top" alt="Product Image"/>
                 
             </div>
         </div>

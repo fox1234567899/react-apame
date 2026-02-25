@@ -39,7 +39,7 @@ const  triggerFileInput =()=>{
         <div className="card" style={{ borderRadius: ".6rem" }}>
           <div className="text-center text-white p-4" style={{background:'var(--gradient-custom)'}}>
             <img
-              src={userInfo.avatar?`${Base_URL}${userInfo.avatar}`:`${Base_URL}img/user/happystick.jpg`}
+              src={userInfo.avatar?`${userInfo.avatar}`:`img/user/happystick.jpg`}
               alt="Avatar"
               className="img-fluid  mb-3"
               style={{ width: "100px" , borderRadius:"300px 300px 10px 10px" }}
