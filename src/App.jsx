@@ -5,7 +5,7 @@ import HomePage from './componenet/home/HomePage'
 import Notfound from './componenet/UI/Notfound'
 import ItemPage from './componenet/Items/ItemPage'
 import api from './api'
-import CheckOutPage from "./component/checkout/CheckOutPage"
+import CheckOutPage from './componenet/checkout/checkOutPage'
 import LoginPage from './user/LoginPage'
 import CartPage from './componenet/cart/CartPage'
 import { useState } from 'react'
