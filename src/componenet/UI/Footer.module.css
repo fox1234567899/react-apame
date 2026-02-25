@@ -1,0 +1,92 @@
+
+
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://wallpapers.com/images/featured/orange-aesthetic-8y1id0f5zglidozn.jpg');
+  background-size: cover;
+  background-position: center;
+
+}
+
+.m {
+  width: 100%;
+  max-width: 1000px;
+  margin: 80px auto 40px;
+  background-color: rgb(0, 0, 0) !important;
+  border: none !important;
+  outline: none !important;
+  background: none !important;
+  border: 1px solid rgb(190, 109, 9)!important;
+
+
+}
+.t{
+    border: none;
+    background-color: rgba(255, 89, 0, 0.715);
+    outline: none;
+    color: rgb(255, 247, 0) !important;
+}
+
+.a{
+    color: rgb(255, 247, 0);
+    border: none;
+    outline: none;
+    border: 1px solid rgb(255, 102, 0);
+    background-color: rgba(255, 89, 0, 0.916) !important;
+}
+.b{
+    color: orange !important;
+    border: none !important;
+    background-color: rgba(255, 89, 0, 0.715) !important;
+    outline: none !important;
+    border: 1px solid rgba(255, 89, 0, 0.715) !important;
+}
+.b:hover{
+    background-color: rgba(255, 128, 0, 0.871) !important;
+    color: yellow !important;
+}
+
+.j{
+    border: none;
+    background:none;
+    margin-left:20px;
+    margin-bottom: 20px;
+    color: var(--icon-theme);;
+}
+.nr{
+    background: var(--navbar-bg);
+ 
+}
+
+.LogoImage{
+     height: 50px;
+  width: auto;
+}
+
+.spinner{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background:rgba(255,255,255,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+
+
+}
+.spinner img{
+    width: 80px;
+    height: auto;
+}

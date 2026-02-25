@@ -1,0 +1,77 @@
+.s{
+    background:var(--header-bg);
+
+    padding: 100px ;
+    top: 0;
+    z-index:10;
+    box-shadow: 5px 5px 12px rgba(1, 1, 1, 0.452);
+}
+.g{
+    font-weight: 100;
+    font-size: 60px;
+    color:var(--header-text);
+    margin-top: 50px;
+}
+
+.tt{
+  background: var(--text-color2) !important;
+  color:var(--text-color)!important;
+}
+:root {
+  --bg-color: #ffffff;
+  --text-color: #fffefe;
+--text-color2: #000000;
+  --card-bg: #000000;
+  --header-bg: linear-gradient(to bottom, #ff6a00, #ee0979);
+  --header-text: #ffffff;
+  --card-price:rgb(27, 187, 27);
+  --container-bg: rgba(239, 239, 239, 0.06);
+  --shadow-bg: rgba(0, 0, 0, 1);
+  --shadow-bg2: rgba(0, 0, 0, 1);
+  --icon-theme:black !important;
+  --navbar-bg:white !important;
+  --button-color:rgb(116, 30, 186);
+  --box-similar:0px -4px 8px rgb(0, 0, 0);
+  --navbar-shadow:5px 0px 10px rgb(0, 0, 0);
+  --cart-s:rgb(7, 47, 15);
+  --cart-s2:rgb(3, 28, 8);
+  --bg-color3:rgb(255, 255, 255);
+  --payment-c:rgba(31, 91, 221, 0.552);
+  --payment-c2:rgb(44, 92, 195);
+  --payment-bg:linear-gradient(to bottom, #3fba0a, #09eee2);
+  --gradient-custom :linear-gradient(to right bottom,  #3fba0a, #09eee2);
+  --button-color2:rgb(204, 60, 204);
+	--button-color3:rgb(29, 6, 162);
+   
+}
+
+/* Dark theme */
+[data-theme='dark'] {
+  --bg-color: #121212;
+  --bg-color3:rgb(164, 4, 186);
+  --outline-color:none;
+  --text-color: #000000;
+  --text-color2: #fff7f7;
+  --navbar-shadow:5px 0px 10px rgb(142, 5, 177);
+  --header-bg: linear-gradient(to bottom, #8400ff, #ee0979);
+  --header-text: #ffffff;
+  --card-price:rgb(202, 28, 205);
+  --container-bg: rgb(1,1,1);
+  --shadow-bg: rgba(225, 0, 255,1);
+  --shadow-bg2: rgba(225, 0, 255, 1);
+  --icon-theme:rgb(255, 255, 255) !important;
+  --navbar-bg:black !important;
+  --card-bg: #f8f9fa !important;
+  --button-color:rgb(250, 184, 51);
+  --box-similar:0px -4px 8px rgb(142, 5, 177);
+  --cart-s:rgb(142, 5, 177);
+  --cart-s2:rgb(58, 3, 72);
+  --payment-c:rgba(250, 184, 51, 0.648);
+  --payment-c2:rgb(250, 184, 51);
+  --payment-bg:linear-gradient(to bottom, #910aba, #b70a75);
+  --gradient-custom :linear-gradient(to right bottom,  #910aba, #b70a75);
+   --button-color2:rgb(31, 163, 64);
+	--button-color3:rgb(255, 85, 0);
+
+
+}
