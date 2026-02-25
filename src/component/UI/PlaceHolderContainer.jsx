@@ -2,7 +2,7 @@ import React from 'react'
 import PlaceHolder from './PlaceHolder'
 
 const PlaceHolderContainer = () => {
-  const placeNumbers = [...Array(10).keys()].slice(0)
+  const placeNumbers = [...Array(20).keys()].slice(0)
   return (
      <section className='py-4' id="shop">
         <h4 style={{textAlign:"center"}}>Our Products</h4>
