@@ -51,6 +51,7 @@ const RegisterPage = () => {
     }
   return (
      <div className ={`${styles.fullscreen_container2}`}>
+        <div className={`${styles.wrapper}`}>
         <div className={`${styles.login_container}`} style={{margin:'120px'}}>
             
             <h3 className={styles.login_title}>Register</h3>
@@ -112,11 +113,19 @@ const RegisterPage = () => {
             </div>
         </div>
     </div>
-    <div style={{border:'none', background:'rgba(1,1,1,0.7)', width:'450px',height:'150px'}}>
+    <div style={{ border: "none",
+    background: "rgba(1,1,1,0.7)",
+    width: "90%",
+    maxWidth: "420px",
+    padding: "15px",
+    marginTop: "20px",
+    borderRadius: "10px",
+    boxSizing: "border-box"}}>
         <h1 className='my-2' style={{textAlign:'center', color:'white'}}>Remember</h1>
         <p className='my-2' style={{textAlign:'center', color:'white'}}>in phone part you should write like(try to be valid number): </p>
         <p className='my-2' style={{textAlign:'center', color:'white'}}>+12154567890</p>
 
+    </div>
     </div>
     </div>
   )

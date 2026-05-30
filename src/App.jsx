@@ -17,6 +17,7 @@ import RegisterPage from './user/RegisterPage'
 import "react-toastify/dist/ReactToastify.css";
 import PaymentPart from './component/payment/PaymentPart'
 const App = () => {
+
   const [numCartItems, setNumberCartItems] = useState(0)
 
   useEffect(function(){

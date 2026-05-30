@@ -64,6 +64,7 @@
 }
 .nr{
     background: var(--navbar-bg);
+    z-index: 9999;
  
 }
 
