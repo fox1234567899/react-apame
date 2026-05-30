@@ -19,7 +19,22 @@ api.interceptors.request.use(async (config) => {
 
   if (!token) return config;
 
-  const decoded = jwtDecode(token);
+  const parts= token.split('.')
+  if(parts.length !==3){
+    localStorage.removeItem('access')
+    return config
+  }
+  let decoded;
+  try{
+    decoded = jwtDecode(token);
+
+
+  }catch(err){
+    localStorage.removeItem('access')
+    return config;
+
+  }
+  
   const current_time = Date.now() / 1000;
 
 
