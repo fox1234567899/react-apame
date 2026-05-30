@@ -14,7 +14,7 @@ const CardCaontainer = ({products}) => {
   }
   return (
     <section className={`py-5 ${styles.b} `}   id='Shop'>
-       <h4 style={{textAlign:'center',opacity:'0.7', color:'var(--text-color2)'}}>This is a demo site with fake payment (made for rersume)</h4>
+       <h4 style={{textAlign:'center',opacity:'0.7', color:'var(--text-color2)'}}>This is a demo site with fake payment (made for resume)</h4>
         <h5 style={{textAlign:"center ",color:"var(--text-color2)",}}>What are You Looking For?</h5>
         <div className='container px-4 pc-lg-5 mt-5'>
             <div className='row justify-content-center '>
