@@ -108,7 +108,7 @@ const RegisterPage = () => {
             </form>
             <div className="login_footer">
               
-                <p>Don't have an account?<Link to="/login">Sign In</Link></p>
+                <p>you have an account?<Link to="/login">Sign Up</Link></p>
             </div>
         </div>
     </div>
