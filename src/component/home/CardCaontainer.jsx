@@ -5,7 +5,7 @@ const CardCaontainer = ({products}) => {
   if(products<1){
     return(
       <>
-      <h1>This is a demo site with fake payment (made for rersume)</h1>
+      <h1>This is a demo site with fake payment (made for resume)</h1>
       <p>no item in here</p>
       
       </>
