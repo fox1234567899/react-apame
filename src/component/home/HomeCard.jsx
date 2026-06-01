@@ -7,7 +7,7 @@ export const HomeCard = ({product}) => {
 <Link to={`/detail/${product.slug}`} style={{textDecoration:"none"}} >          
   <div className={styles.card} >
                 <div className={`${styles.wrapper}`} >
-                    <img src={`${Base_URL}${product.image}`} className={`${styles.cardImage}`}  alt="Product image" />
+                    <img src={product.image}className={`${styles.cardImage}`}  alt="Product image" />
                 </div>
                 <div className='my-2 ' >
                     <h5 className={` mb-1`} style={{fontFamily:"monospace" ,textAlign:"center" ,fontSize:"25px"}}>{product.name}</h5>
