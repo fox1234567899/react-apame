@@ -8,10 +8,10 @@ const Spinner = ({loading}) => {
   if(!loading) return null;
   return (
     <div style={{display:'flex', justifyContent:'center', alignItems:'center', height:"100vh", backgroundColor:'var(--text-color)', marginTop:"50px"}}>
-      <img 
-        src={cat} 
-        alt="..." 
-        style={{ width: '600px', height: '600px',  }} 
+      <ClipLoader 
+        color="white"
+        loading={loading}
+        cssOverride={{ width: '600px', height: '600px' }}
       />
     </div>
   )
