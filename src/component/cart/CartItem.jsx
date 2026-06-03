@@ -96,7 +96,7 @@ const CartItem = ({setCartItems,item,setCartTotal,cartitems,setNumberCartItems})
                 <div className="card-body" style={{background:'var(--card-bg'}} >
                     <div className="row cart-item mb-3">
                         <div className="col-md-3">
-                            <img src={`${Base_URL}${item.item.image}`}   alt="Product 1" className="img-fluid rounded" />
+                            <img src={`${item.item.image}`}   alt="Product 1" className="img-fluid rounded" />
                         </div>
                         <div className="col-md-5">
                             <h5 className="card-title" style={{color:'var(--text-color'}} >{item.item.name}</h5>

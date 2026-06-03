@@ -17,7 +17,7 @@ const OrderStatus = ({order}) => {
 
         <img style={{height: "250px",
     objectFit: "cover"}}
-          src={`${Base_URL}${order.item.image}`}
+          src={`${order.item.image}`}
           className="card-img-top "
           alt="Product"
         />
