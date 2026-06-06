@@ -12,7 +12,8 @@ function useCardData(){
     const shipping = 10.00
     const [loading,setLoading] = useState(false)
     useEffect(function(){
-        api.get(`get_cart`)
+      setLoading(true)
+      api.get(`get_cart`)
         .then(res=>{
             setLoading(false)
             setCartTotal(res.data.sum_total)
