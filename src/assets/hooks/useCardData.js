@@ -12,7 +12,6 @@ function useCardData(){
     const shipping = 10.00
     const [loading,setLoading] = useState(false)
     useEffect(function(){
-      setLoading(true)
         api.get(`get_cart`)
         .then(res=>{
             setLoading(false)
