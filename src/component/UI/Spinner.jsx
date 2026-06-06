@@ -9,9 +9,11 @@ const Spinner = ({loading}) => {
   return (
     <div style={{display:'flex', justifyContent:'center', alignItems:'center', height:"100vh", backgroundColor:'var(--text-color)', marginTop:"50px"}}>
       <ClipLoader 
-        color="white"
+        color="green"
         loading={loading}
         cssOverride={{ width: '600px', height: '600px' }}
+         aria-label="Loading Spinner"
+        data-testid="loader"
       />
     </div>
   )
