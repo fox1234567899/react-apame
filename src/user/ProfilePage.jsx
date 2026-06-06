@@ -23,7 +23,7 @@ const ProfilePage = () => {
 
 	},[])
 		if(loading){
-			<Spinner loading={loading} />
+			return <Spinner loading={loading} />
 		}
 
   return (
