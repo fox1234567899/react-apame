@@ -18,8 +18,8 @@ const Spinner = ({loading}) => {
         src={cat}
         alt="Loading..."
         style={{
-          width: '400px',
-          height: '400px',
+          width: '800px',
+          height: '800px',
         }}
       />
     </div>
