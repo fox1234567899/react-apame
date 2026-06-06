@@ -52,7 +52,7 @@ const RegisterPage = () => {
   return (
      <div className ={`${styles.fullscreen_container2}`}>
         <div className={`${styles.wrapper}`}>
-        <div className={`${styles.login_container}`} style={{margin:'20px auto'}}>
+        <div className={`${styles.login_container}`} style={{margin:'40px auto'}}>
             
             <h3 className={styles.login_title}>Register</h3>
             {error && <Error error={error}/>}
