@@ -38,7 +38,7 @@ const LoginPage = () => {
             })
             .catch(err=>{
                 console.log(err.message)
-                toast.success('type your username and password correctly!')
+                toast.error('type your username and password correctly!')
                 
                 setLoading(false)
             })
