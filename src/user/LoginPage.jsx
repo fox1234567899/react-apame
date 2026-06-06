@@ -38,7 +38,8 @@ const LoginPage = () => {
             })
             .catch(err=>{
                 console.log(err.message)
-                setError(err.message)
+                toast.success('type your username and password correctly!')
+                
                 setLoading(false)
             })
     }
@@ -47,7 +48,7 @@ const LoginPage = () => {
     
     <div className ={`${styles.fullscreen_container}`}>
         <div className={` ${styles.login_container}`} style={{margin:'120px'}}>
-            {error && <Error error={error}/>}
+
             <h3 className={` ${styles.login_title}`}>Welcome Back to your site</h3>
            
             <form onSubmit={submitSystem}>
