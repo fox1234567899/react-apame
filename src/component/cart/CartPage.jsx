@@ -31,6 +31,10 @@ const CartPage = ({setNumberCartItems}) => {
     <div className="container" >
       <div>
     <p  style={{color:'var(--text-color2)',marginTop:'80px',marginBottom:'20px',fontSize:'50px'}}>Your Shopping Cart</p>
+
+      <button onClick={() => setLoading(!loading)}>Toggle Loader</button>
+
+
     </div>
     <div className="row">
       <div className="col-12 col-lg-8 my-2">
