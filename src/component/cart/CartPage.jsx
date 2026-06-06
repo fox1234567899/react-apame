@@ -10,10 +10,7 @@ const CartPage = ({setNumberCartItems}) => {
 
 
   const{ shipping,cartitems,setCartItems,cartTotal,setCartTotal,tax,loading,setLoading} = useCardData()
-    if(loading){
-    return <Spinner loading ={loading} />
-  }
-
+  
    
   if(cartitems.length<1){
     return(
@@ -24,6 +21,9 @@ const CartPage = ({setNumberCartItems}) => {
 
       </div>
     )
+  }
+  if(loading){
+    return <Spinner loading ={loading} />
   }
 
   return (
