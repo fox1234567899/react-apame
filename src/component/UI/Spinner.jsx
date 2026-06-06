@@ -1,6 +1,5 @@
-import cat from '../../assets/hooks/orangecat.gif'
+import cat from '../../assets/hooks/orangecat.gif';
 // import styles from './Footer.module.css'
-import {ClipLoader} from 'react-spinners'
 
 
 
@@ -19,8 +18,8 @@ const Spinner = ({loading}) => {
         src={cat}
         alt="Loading..."
         style={{
-          width: '200px',
-          height: '200px',
+          width: '400px',
+          height: '400px',
         }}
       />
     </div>

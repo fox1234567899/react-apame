@@ -32,7 +32,6 @@ const CartPage = ({setNumberCartItems}) => {
       <div>
     <p  style={{color:'var(--text-color2)',marginTop:'80px',marginBottom:'20px',fontSize:'50px'}}>Your Shopping Cart</p>
 
-      <button onClick={() => setLoading(!loading)}>Toggle Loader</button>
 
 
     </div>
