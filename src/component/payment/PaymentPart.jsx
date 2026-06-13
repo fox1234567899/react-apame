@@ -16,7 +16,7 @@ const PaymentPart = ({setNumberCartItems}) => {
         const txRef = qParams.get('tx_ref')
         const transactionId = qParams.get('transaction_id')
         if(status && txRef && transactionId){
-            api.post(`payment_callback/?status=${status}&tx_ref=${txRef}&transaction_id=${transactionId}`)
+            api.get(`payment_callback/?status=${status}&tx_ref=${txRef}&transaction_id=${transactionId}`)
             .then(res =>{
                 setMessage(res.data.message)
                 setSubMessage(res.data.subMessage)
