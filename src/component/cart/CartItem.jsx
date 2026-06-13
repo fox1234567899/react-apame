@@ -38,7 +38,7 @@ const CartItem = ({setCartItems,item,setCartTotal,cartitems,setNumberCartItems})
 
             setLoading(false)
             setCartTotal(cartitems.map((cartitem) => cartitem.id === item.id ? res.data.data : cartitem).reduce((acc,curr)=> acc+curr.total , 0))
-            setNumberCartItems(cartitems.map((cartitem) => cartitem.id === item.id ? res.data.data : cartitem).reduce((acc,curr)=> acc+curr.total , 0))
+            setNumberCartItems(cartitems.map((cartitem) => cartitem.id === item.id ? res.data.data : cartitem).reduce((acc,curr)=> acc+curr.quantity , 0))
          
         })
         .catch(err =>{
