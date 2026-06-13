@@ -48,26 +48,16 @@ const CartItem = ({setCartItems,item,setCartTotal,cartitems,setNumberCartItems})
     }
 
      function increaseQuantity(){
-        debugger;
-
-        "setQuantity(p =>p+1)"
-        setQuantity(prev => {
-        console.log("PREV:", prev)
-        return prev + 1
-    })
+        setQuantity(p =>p+1)
+      
      }
 
      function decreaseQuantity(){
-            setQuantity(p =>Math.max(1,p-1))
+        setQuantity(p =>Math.max(1,p-1))
      } 
 
      function handleTheQuantity(e){
-        debugger;
-
         const value= Number(e.target.value)
-
-        console.log("INPUT:", e.target.value);
-        console.log("STATE BEFORE:", quantity);
         setQuantity(value<1?1:value)
 
      }
@@ -115,7 +105,6 @@ const CartItem = ({setCartItems,item,setCartTotal,cartitems,setNumberCartItems})
                         </div>
                         <div className="col-md-2">
                             <div className="input-group">
-                                <p>Quantity state: {quantity}</p>
                                 <button className="btn btn-outline-secondary btn-sm" onClick={decreaseQuantity} type="button">-</button>
                                 <input style={{maxWidth:"100px"  }}  type="number" value={quantity} onChange={handleTheQuantity}  className="form-control   form-control-sm text-center quantity-input j"  />
                                 <button className="btn btn-outline-secondary btn-sm" onClick={increaseQuantity} type="button">+</button>
