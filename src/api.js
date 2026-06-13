@@ -40,7 +40,7 @@ api.interceptors.request.use(async (config) => {
 
   if (decoded.exp < current_time && refresh) {
     try {
-      const res = await axios.post("/token/refresh/", { refresh });
+      const res = await api.post("/token/refresh/", { refresh });
       token = res.data.access;
       localStorage.setItem("access", token);
     } catch {
