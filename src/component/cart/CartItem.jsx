@@ -48,7 +48,11 @@ const CartItem = ({setCartItems,item,setCartTotal,cartitems,setNumberCartItems})
     }
 
      function increaseQuantity(){
-        setQuantity(p =>p+1)
+        "setQuantity(p =>p+1)"
+        setQuantity(prev => {
+        console.log("PREV:", prev)
+        return prev + 1
+    })
      }
 
      function decreaseQuantity(){
@@ -56,7 +60,9 @@ const CartItem = ({setCartItems,item,setCartTotal,cartitems,setNumberCartItems})
      } 
 
      function handleTheQuantity(e){
-        value= Number(e.target.value)
+        console.log("INPUT VALUE:", e.target.value)
+
+        const value= Number(e.target.value)
         setQuantity(value<1?1:value)
 
      }
