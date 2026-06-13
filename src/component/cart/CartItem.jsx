@@ -115,6 +115,7 @@ const CartItem = ({setCartItems,item,setCartTotal,cartitems,setNumberCartItems})
                         </div>
                         <div className="col-md-2">
                             <div className="input-group">
+                                <p>Quantity state: {quantity}</p>
                                 <button className="btn btn-outline-secondary btn-sm" onClick={decreaseQuantity} type="button">-</button>
                                 <input style={{maxWidth:"100px"  }}  type="number" value={quantity} onChange={handleTheQuantity}  className="form-control   form-control-sm text-center quantity-input j"  />
                                 <button className="btn btn-outline-secondary btn-sm" onClick={increaseQuantity} type="button">+</button>
