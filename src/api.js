@@ -8,18 +8,23 @@ export const Base_URL= import.meta.env.VITE_BASE_URL || "http://127.0.0.1:8000";
 const api =axios.create({
     baseURL:Base_URL,
     withCredentials:true,
-    headers: {
-      "X-CSRFToken": csrftoken,
-    },
+   
 })
 
 
 
 
 api.interceptors.request.use(async (config) => {
+
+  const csrftoken= getCookie("csrftoken");
+  if(csrftoken){
+    config.headers["X-CSRFToken"] = csrftoken;
+  }
+
+
   let token = localStorage.getItem("access");
   const refresh = localStorage.getItem("refresh");
-
+  
   if (!token) return config;
 
   const parts= token.split('.')
