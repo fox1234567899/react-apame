@@ -11,8 +11,17 @@ const api =axios.create({
    
 })
 
+function getCookie(name){
+  const value=`; ${document.cookie}`;
+  const parts = value.split(`; ${name}=`);
+  if(parts.length === 2){
+    return parts.pop().split(";").shift();
+  }
+}
 
-
+export async function initCSRF(){
+  await api.get("/csrf_cookie_view/");
+}
 
 api.interceptors.request.use(async (config) => {
 

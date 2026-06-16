@@ -5,6 +5,7 @@ import HomePage from './component/home/HomePage'
 import Notfound from './component/UI/Notfound'
 import ItemPage from './component/Items/ItemPage'
 import api from './api'
+import { initCSRF } from './api'
 import CheckOutPage from './component/checkout/CheckOutPage'
 import LoginPage from './user/LoginPage'
 import CartPage from './component/cart/CartPage'
@@ -30,6 +31,12 @@ const App = () => {
         console.log(err.message)
       })
     
+  },[])
+
+  useEffect(function(){
+
+    initCSRF();
+
   },[])
 
 
