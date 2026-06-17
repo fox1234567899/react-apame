@@ -24,6 +24,11 @@ const PaymentPart = ({setNumberCartItems}) => {
             })
             .catch(err=>{
                 console.log(err.message)
+                if(err.response?.data?.message){
+                    setMessage(err.response.data.message)
+                    setSubMessage(err.response.data.message)
+
+                }
             })
         }
     },[])
