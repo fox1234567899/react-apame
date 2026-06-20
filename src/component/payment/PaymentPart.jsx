@@ -15,13 +15,15 @@ const PaymentPart = ({setNumberCartItems}) => {
         const status = qParams.get('status')
         const txRef = qParams.get('tx_ref')
         const transactionId = qParams.get('transaction_id')
+
+        if (status ==="cancelled"){
+            setMessage("payment cancelled")
+            setSubMessage("your payment has been cancelled , please try again!")
+        }
         if(status && txRef && transactionId){
             api.post(`payment_callback/?status=${status}&tx_ref=${txRef}&transaction_id=${transactionId}`)
             .then(res =>{
-                console.log(status)
-                console.log(txRef)
-                console.log(transactionId)
-
+          
                 setMessage(res.data.message)
                 setSubMessage(res.data.subMessage)
                 setNumberCartItems(0)
@@ -29,11 +31,10 @@ const PaymentPart = ({setNumberCartItems}) => {
             })
             .catch(err=>{
                 console.log(err.message)
-                if(err.response?.data?.message){
-                    setMessage(err.response.data.message)
-                    setSubMessage(err.response.data.message)
+                setMessage(err.response?.data?.message)
+                setSubMessage(err.response?.data?.message)
 
-                }
+                
             })
         }
     },[])
