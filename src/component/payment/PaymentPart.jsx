@@ -18,7 +18,10 @@ const PaymentPart = ({setNumberCartItems}) => {
         if(status && txRef && transactionId){
             api.post(`payment_callback/?status=${status}&tx_ref=${txRef}&transaction_id=${transactionId}`)
             .then(res =>{
-                
+                console.log(status)
+                console.log(txRef)
+                console.log(transactionId)
+
                 setMessage(res.data.message)
                 setSubMessage(res.data.subMessage)
                 setNumberCartItems(0)
