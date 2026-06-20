@@ -1,39 +1,109 @@
+# Apame E-commerce Web App
 
-    for react I made an api.js that first of all get the url of backend 
-    
-    and by writing axios whenever I say api.get in any place of my site
+A full-stack e-commerce web application built with React and a Django REST API backend.  
+It includes authentication, cart management, checkout with payment integration, and order tracking.
 
-    I can access to delete get post update and even for authentication (CRUD) so 
+🌐 Live Demo: https://react-apame.onrender.com
 
-    with this I can access to token and know that my user is authenticated or not 
+---
 
-    in App.js  we have MainLayout that is about navbar and all parts of the site and the footer and   ToastContainer for messages that we got from the site
+## 🚀 Features
 
-    the detail page we have in App.jsx that needs slug like if the name of the product is t-shirt it 
-    
-    would be like https::/the name of the site/detail/T-shirt  
-    
-    next the Cart page  that when you add something to your cart your product will appear there and then in their you have this ability to add or delete the item in your cart
+### 🛒 Shopping Features
+- Browse products and view detailed product pages
+- Add/remove items from cart
+- Update product quantity in cart
+- Real-time cart state management
 
-    next one is the login page where you write your username and password to be the part of the site 
+### 🔍 Product Pages
+- Dynamic product detail pages using URL slugs
+- Example: `/detail/t-shirt`
 
-    next is the register that you fill the blanks and with this you may have a new user for your site
+### 🔐 Authentication
+- User registration and login system
+- Token-based authentication (Axios interceptor)
+- Protected routes (checkout, profile, cart actions)
 
-    and the the checkout part that needs authentication needs protection without knowing who is the user how should I know who is that person to send it or show the payment part to it 
+### 💳 Checkout & Payment
+- Checkout page requires authentication
+- Secure payment flow integration
+- Payment status handling:
+  - Successful payment
+  - Cancelled payment
+  - Failed payment
 
-    and the next one is profile page when site knows you, then you can have your profile a place for choosing
+### 👤 User Profile
+- View user profile
+- Update avatar
+- View order history
 
-    your avatar and see the orders the things you bought from this site .
+### 📦 Orders
+- Automatically create orders after successful payment
+- Store purchased items per order
 
-    "*" that no matter which thing you write if we don't have this in our site will show not found 
+### 🔎 Search
+- Product search with keyword matching (first-letter based filtering)
 
-    search part based on the first word it will show some results .
+### ❌ 404 Page
+- Catch-all route for undefined pages (“Not Found”)
 
-    and the last one is about after purchasing you should see some results like if you paid that thing and there was not 
-    
-    any problem with it will show successful and so on based on the situation you have.
+---
 
-        You can visit the site I made with:
-        
-       https://react-apame.onrender.com
+## 🧱 Project Structure (Frontend)
 
+- `api.js` → Axios instance (base URL, token handling, CRUD requests)
+- `App.jsx` → Main routing configuration
+- `MainLayout` → Navbar, footer, and global layout wrapper
+- `Protected Routes` → Restrict checkout & profile pages
+- Pages:
+  - Home
+  - Product Detail
+  - Cart
+  - Login / Register
+  - Checkout
+  - Profile
+  - Payment Status
+
+---
+
+## ⚙️ Tech Stack
+
+- React (Vite)
+- React Router
+- Axios
+- Django REST Framework (Backend)
+- JWT Authentication
+- Flutterwave Payment Integration
+
+---
+
+## 🔐 Authentication Flow
+
+- User logs in → token saved in localStorage
+- Axios automatically attaches token to requests
+- Backend validates user for protected endpoints
+
+---
+
+## 💳 Payment Flow
+
+1. User checks out
+2. Redirected to payment gateway
+3. Returns to `/payment-status`
+4. Backend verifies transaction
+5. Order is created if successful
+6. Cart is cleared
+
+---
+
+## 📌 Notes
+
+- Cart and checkout are protected routes (auth required)
+- Payment status page handles success/cancel/failure states
+- All API calls go through a centralized `api.js` file
+
+---
+
+## 📷 Live Project
+
+👉 https://react-apame.onrender.com
