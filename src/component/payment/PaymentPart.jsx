@@ -18,15 +18,11 @@ const PaymentPart = ({setNumberCartItems}) => {
         if(status && txRef && transactionId){
             api.post(`payment_callback/?status=${status}&tx_ref=${txRef}&transaction_id=${transactionId}`)
             .then(res =>{
-                if(res.data.status === 'cancelled'){
-                    setMessage(res.data.message)
-                    setSubMessage(res.data.message)
-                }
-                else{
+                
                 setMessage(res.data.message)
                 setSubMessage(res.data.subMessage)
                 setNumberCartItems(0)
-                }
+               
             })
             .catch(err=>{
                 console.log(err.message)
