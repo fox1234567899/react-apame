@@ -107,3 +107,8 @@ It includes authentication, cart management, checkout with payment integration, 
 ## 📷 Live Project
 
 👉 https://react-apame.onrender.com
+
+
+## 💳 Flutterwave testing card 
+
+ 👉 https://developer.flutterwave.com/v3.0/docs/testing 
