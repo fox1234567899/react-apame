@@ -115,10 +115,10 @@ It includes authentication, cart management, checkout with payment integration, 
 
 
 
- ## 📸 My apame site pictures 
+ ## 📸 My Apame site pictures 
 
 
- ![poster](assets/posterSite.png)
+ ![poster](assets/poster2.png)
 
 
  ![product](assets/Products.png)
