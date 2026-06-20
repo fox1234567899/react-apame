@@ -112,3 +112,16 @@ It includes authentication, cart management, checkout with payment integration, 
 ## 💳 Flutterwave testing card 
 
  👉 https://developer.flutterwave.com/v3.0/docs/testing 
+
+
+
+ ## 📸 My apame site pictures 
+
+
+ ![poster](./assets/posterSite.png)
+
+
+ ![product](./assets/Products.png)
+
+
+ ![cart](./assets/InsideCart.png)
